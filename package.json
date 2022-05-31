@@ -1,10 +1,11 @@
 {
   "name": "quiz-api",
   "version": "1.0.0",
-  "description": "",
+  "description": ">  O projeto consiste numa API para o app Devquiz (jogo de perguntas e respostas).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app"
   },
   "author": "João Guilherme",
   "license": "ISC",
@@ -15,5 +16,14 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "uuid": "^8.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jguilhermesl/quiz-api.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jguilhermesl/quiz-api/issues"
+  },
+  "homepage": "https://github.com/jguilhermesl/quiz-api#readme"
 }
