@@ -31,6 +31,13 @@ app.get('/questions', (req, res) => {
     return res.json(questions)
 })
 
+app.get('/questions/:id', checkQuestionId, (req, res) => {
+	const { id } = req.params
+	const index =  req.questionIndex
+
+    return res.json(questions[index])
+})
+
 app.post('/questions', (req, res) => {
     const { question , alternatives, correctAnswer, difficulty, theme } = req.body
 
