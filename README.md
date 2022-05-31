@@ -7,18 +7,20 @@
 
 ### Rotas
 
-<ul>
-	<li><strong>POST /questions:</strong> a rota recebe um objeto com valores question, alternatives, correctAnswer, difficulty e theme. 
-	</li>
-	<li><strong>GET /questions:</strong> rota que retorna todo o JSON com todos os objetos de questões.</li>
-	<li><strong>PUT /questions/id:</strong> rota que permite a edição dos dados de uma questão da api.</li>
-	<li><strong>DELETE /questions/id:</strong> essa rota deleta uma questão da api.</li>
-</ul>
+	
+- `POST /order`: a rota recebe um objeto com valores question, alternatives, correctAnswer, difficulty e theme. 
+
+- `GET /questions`: rota que retorna todo o JSON com todos os objetos de questões.
+
+- `PUT /questions/id`: rota que permite a edição dos dados de uma questão da api.
+
+- `DELETE /questions/id`: essa rota deleta uma questão da api.
 
 #### Exemplo
-
-{
-	"question": "Quem é o atual presidente do Brasil?",
+```js
+[
+  {
+    "question": "Quem é o atual presidente do Brasil?",
 	"alternatives": [
 		{ "alternative": "A", "answer": "João Dória"},
 		{ "alternative": "B", "answer": "Bolsonaro"},
@@ -28,7 +30,9 @@
 	"correctAnswer": "B",
 	"difficulty": "easy",
 	"theme": "history"
-}
+  }
+];
+```
 
 ## :rocket: Tecnologias ##
 
