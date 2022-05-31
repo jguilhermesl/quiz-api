@@ -23,6 +23,10 @@ const checkQuestionId = (req, res, next) => {
     next()
 }
 
+app.get('/', (req, res) => {
+	return res.json({ message: "Olá, Acesse a rota /questions."})
+})
+
 app.get('/questions', (req, res) => {
     return res.json(questions)
 })
