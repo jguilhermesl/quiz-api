@@ -8,7 +8,7 @@
 ### Rotas
 
 	
-- `POST /order`: a rota recebe um objeto com valores question, alternatives, correctAnswer, difficulty e theme. 
+- `POST /questions`: a rota recebe um objeto com valores question, alternatives, correctAnswer, difficulty e theme. 
 
 - `GET /questions`: rota que retorna todo o JSON com todos os objetos de questões.
 
